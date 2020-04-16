@@ -1,4 +1,4 @@
-package org.self.learn;
+package org.self.learn.stream;
 
 import java.util.Arrays;
 import java.util.List;

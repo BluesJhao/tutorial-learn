@@ -1,4 +1,4 @@
-package org.self.learn;
+package org.self.learn.stream;
 
 import com.sun.tools.javac.util.List;
 
@@ -112,7 +112,7 @@ public class StreamUseage {
         }
 
         //读取properties并聚合
-        try (Stream<String> stringStream = Files.lines(Paths.get("stream-jdk8/src/main/resources/test.properties"))) {
+        try (Stream<String> stringStream = Files.lines(Paths.get("java/src/main/resources/test.properties"))) {
             stringStream
                     .filter(t -> !Objects.isNull(t) && t.length() > 0)
                     .map(t -> {
