@@ -1,7 +1,5 @@
 package org.self.learn.stream;
 
-import com.sun.tools.javac.util.List;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -32,14 +30,13 @@ import java.util.stream.Stream;
  * <p>
  * 其他操作：allMatch(), anyMatch(), forEach()。
  *
- * @author Jiahao Li
  * @datetime 2020-04-13 17:06.
  */
 public class StreamUseage {
 
     public static void main(String[] args) {
 
-        List<String> stringList = List.of("a1", " a2", "a3", "a4", "a5 ");
+        List<String> stringList = Arrays.asList("a1", " a2", "a3", "a4", "a5 ");
         String a5 = stringList.stream()
                 .map(String::trim)
                 .map(String::toUpperCase)
@@ -59,7 +56,7 @@ public class StreamUseage {
         stringMap.forEach((K, V) -> System.out.println(K + "=" + V));
 
         //分组归类
-        List<String> list = List.of("Apple", "Banana", "Blackberry", "Coconut", "Avocado", "Cherry", "Apricots", "Banana");
+        List<String> list = Arrays.asList("Apple", "Banana", "Blackberry", "Coconut", "Avocado", "Cherry", "Apricots", "Banana");
         final Map<String, java.util.List<String>> listMap = list.stream().collect(Collectors.groupingBy(t -> t.substring(0, 1)));
         System.out.println(listMap);
 
@@ -70,9 +67,9 @@ public class StreamUseage {
         list.stream().distinct().skip(2).limit(5).collect(Collectors.toList()).forEach(System.out::println);
 
         //Stream提供连接
-        Stream<String> s11 = List.of("AA", "BB", "CC").stream();
+        Stream<String> s11 = Arrays.asList("AA", "BB", "CC").stream();
 //        final Stream<String> b = s11.peek(System.out::println);
-        Stream<String> s12 = List.of("DD", "EE", "BB").stream();
+        Stream<String> s12 = Arrays.asList("DD", "EE", "BB").stream();
         Stream<String> s13 = Stream.concat(s11, s12);
         s13.forEach(System.out::println);
 
@@ -85,7 +82,7 @@ public class StreamUseage {
         listStream.flatMap(Collection::stream).forEach(System.out::println);
 
         //并行操作
-        final List<String> strings = List.of("Q", "Y", "W", "E", "R");
+        final List<String> strings = Arrays.asList("Q", "Y", "W", "E", "R");
         strings.parallelStream().sorted().collect(Collectors.toList()).forEach(System.out::println);
 
         //计算基数

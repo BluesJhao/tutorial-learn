@@ -1,0 +1,7 @@
+CPU取数计算过程: CPU-->寄存器-->L1-->L2-->内存
+读取结果数据的过程: CPU<--寄存器<--L1<--L2<--
+
+如果非daemon线程已全部退出，JMV将会退出
+
+AQS:
+https://juejin.im/post/5d34502cf265da1baf7d27aa

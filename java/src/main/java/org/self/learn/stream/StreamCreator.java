@@ -15,7 +15,6 @@ import java.util.stream.Stream;
  * 通过Supplier创建Stream，可以是无限序列；
  * 通过其他类的相关方法创建。
  *
- * @author Jiahao Li
  * @datetime 2020-04-13 14:52.
  */
 public class StreamCreator {
@@ -26,7 +25,7 @@ public class StreamCreator {
         stringStream.forEach(System.out::println);
 
         //stream创建[基于集合构建]
-        List<String> strings = com.sun.tools.javac.util.List.of("B1", "B2", "B4", "B6", "B5");
+        List<String> strings = Arrays.asList("B1", "B2", "B4", "B6", "B5");
         Stream<String> stream = strings.stream();
         stream.forEach(System.out::println);
 

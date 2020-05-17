@@ -14,7 +14,6 @@ import java.nio.file.Paths;
  * <p>
  * 在不改变原始对象与目标对象前提下，将原始对象转化成目标对象的中间对象简称适配器对象，
  *
- * @author Li Jiahao
  * @date 2020-04-18.
  */
 public class AdapterSample {

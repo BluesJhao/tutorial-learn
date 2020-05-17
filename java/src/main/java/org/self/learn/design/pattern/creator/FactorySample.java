@@ -11,7 +11,6 @@ package org.self.learn.design.pattern.creator;
  * 而产品的内部优化与配置升级对于用户来说无需知道，
  * 用户只需要简单的面对工厂和最终产品即可（对于调用方，屏蔽了内部细节）
  *
- * @author Jiahao Li
  * @datetime 2020-04-17 00:38.
  */
 class FactorySample {

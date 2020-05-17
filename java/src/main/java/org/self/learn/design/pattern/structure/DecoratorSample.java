@@ -21,7 +21,6 @@ package org.self.learn.design.pattern.structure;
  * <p>
  * 举一个例子: 在内文本容上附加<span><bold><u></u></bold></span>进行渲染
  *
- * @author Li Jiahao
  * @date 2020-04-19.
  */
 public class DecoratorSample {

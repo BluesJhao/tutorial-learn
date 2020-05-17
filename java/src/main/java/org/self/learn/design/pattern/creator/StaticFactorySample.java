@@ -11,7 +11,6 @@ package org.self.learn.design.pattern.creator;
  * 演变到自己是工厂，自己又是产品，一手操办
  * Integer.valueOf(), Long.valueOf() ...
  *
- * @author Jiahao Li
  * @datetime 2020-04-17 01:37.
  */
 public class StaticFactorySample {

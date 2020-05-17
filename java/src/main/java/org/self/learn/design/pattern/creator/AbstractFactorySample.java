@@ -11,7 +11,6 @@ package org.self.learn.design.pattern.creator;
  * 实际意义:
  * 不同的厂商实现相同的功能或者协议是时引入，这些功能的效果，再具体的产品里体现
  *
- * @author Jiahao Li
  * @datetime 2020-04-17 02:11.
  */
 public class AbstractFactorySample {
