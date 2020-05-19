@@ -3,7 +3,7 @@ package org.self.learn.datastruct;
 import java.util.concurrent.ConcurrentSkipListMap;
 
 /**
- * 跳跃表数据结构:效率比肩平衡树
+ * 跳跃表数据结构:效率比肩平衡树:以牺牲部分空间换取查询效率
  * <p>
  * 一种基于有序链表叠加多级索引层链表的一种数据结构
  * <p>
